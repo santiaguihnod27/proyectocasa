@@ -1,101 +1,56 @@
-/* style.css */
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
-  color: #e5e5e5;
+<!DOCTYPE html>
+<a href="#clanes">Clanes</a>
+<a href="#reglas">Reglas</a>
+<a href="#descargas">Descargas</a>
+</nav>
+<div class="ip">play.tuservidor.com:7777</div>
+</header>
+<section id="inicio" class="hero">
+<h1>FenixZone DM — Tu servidor SA-MP</h1>
+<p>IP: <span class="ip-copy">play.tuservidor.com:7777</span></p>
+<button onclick="copiarIP()">Copiar IP</button>
+</section>
+<section id="features">
+<h2>Características</h2>
+<ul>
+<li>Deathmatch Pulido</li>
+<li>Clanes y Retos</li>
+<li>Anticheat + Fair Play</li>
+</ul>
+</section>
+<section id="clanes">
+<h2>Clanes Destacados</h2>
+<ul>
+<li>FZN • Legends</li>
+<li>DK • Deadly Kings</li>
+<li>LFT • Litefoot</li>
+</ul>
+</section>
+<section id="reglas">
+<h2>Reglas</h2>
+<ul>
+<li>Respeta a todos.</li>
+<li>No cheats ni bugs.</li>
+<li>No spam ni publicidad.</li>
+<li>Usa /report con evidencia.</li>
+</ul>
+</section>
+<section id="descargas">
+<h2>Descargas</h2>
+<p>Cliente SA-MP recomendado:</p>
+<ul>
+<li>SA-MP 0.3.7</li>
+<li>SA-MP 0.3DL</li>
+</ul>
+</section>
+<footer>
+<p>© 2025 FZDM. No afiliado a Rockstar/Take-Two.</p>
+</footer>
+<script>
+function copiarIP(){
+const ip = document.querySelector('.ip-copy').innerText;
+navigator.clipboard.writeText(ip).then(()=>{ alert('IP copiada!'); });
 }
-
-header.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background-color: #1f1f1f;
-  border-bottom: 1px solid #333;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-header .logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #facc15;
-}
-
-header nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #e5e5e5;
-  transition: color 0.2s;
-}
-header nav a:hover {
-  color: #facc15;
-}
-
-header .ip {
-  font-weight: bold;
-  background-color: #2a2a2a;
-  padding: 5px 10px;
-  border-radius: 8px;
-}
-
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: radial-gradient(circle at top, #facc15, transparent 70%);
-}
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-.hero button {
-  background-color: #facc15;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 12px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.hero button:hover {
-  background-color: #eab308;
-}
-
-section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #facc15;
-}
-
-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-section ul li {
-  background-color: #1f1f1f;
-  margin-bottom: 10px;
-  padding: 15px;
-  border-radius: 12px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid #333;
-  background-color: #1f1f1f;
-  color: #888;
-}
+</script>
+</body>
+</html>
