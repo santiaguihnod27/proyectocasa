@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FenixZone DM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">FZDM</div>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#features">Características</a>
+    <a href="#clanes">Clanes</a>
+    <a href="#reglas">Reglas</a>
+    <a href="#descargas">Descargas</a>
+  </nav>
+  <div class="ip">play.tuservidor.com:7777</div>
+</header>
+
+<section id="inicio" class="hero">
+  <h1>FenixZone DM — Tu servidor SA-MP</h1>
+  <p>IP: <span class="ip-copy">play.tuservidor.com:7777</span></p>
+  <button onclick="copiarIP()">Copiar IP</button>
+</section>
+
+<section id="features">
+  <h2>Características</h2>
+  <ul>
+    <li>Deathmatch Pulido</li>
+    <li>Clanes y Retos</li>
+    <li>Anticheat + Fair Play</li>
+  </ul>
+</section>
+
+<section id="clanes">
+  <h2>Clanes Destacados</h2>
+  <ul>
+    <li>FZN • Legends</li>
+    <li>DK • Deadly Kings</li>
+    <li>LFT • Litefoot</li>
+  </ul>
+</section>
+
+<section id="reglas">
+  <h2>Reglas</h2>
+  <ul>
+    <li>Respeta a todos.</li>
+    <li>No cheats ni bugs.</li>
+    <li>No spam ni publicidad.</li>
+    <li>Usa /report con evidencia.</li>
+  </ul>
+</section>
+
+<section id="descargas">
+  <h2>Descargas</h2>
+  <p>Cliente SA-MP recomendado:</p>
+  <ul>
+    <li>SA-MP 0.3.7</li>
+    <li>SA-MP 0.3DL</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 FZDM. No afiliado a Rockstar/Take-Two.</p>
+</footer>
+
+<script>
+function copiarIP(){
+  const ip = document.querySelector('.ip-copy').innerText;
+  navigator.clipboard.writeText(ip).then(()=>{ alert('IP copiada!'); });
+}
+</script>
+
+</body>
+</html>
