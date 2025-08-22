@@ -1,0 +1,64 @@
+body {
+transition: color 0.2s;
+}
+header nav a:hover {
+color: #facc15;
+}
+header .ip {
+font-weight: bold;
+background-color: #2a2a2a;
+padding: 5px 10px;
+border-radius: 8px;
+}
+.hero {
+text-align: center;
+padding: 80px 20px;
+background: radial-gradient(circle at top, #facc15, transparent 70%);
+}
+.hero h1 {
+font-size: 2.5em;
+margin-bottom: 10px;
+}
+.hero p {
+font-size: 1.2em;
+margin-bottom: 20px;
+}
+.hero button {
+background-color: #facc15;
+border: none;
+padding: 10px 20px;
+border-radius: 12px;
+font-weight: bold;
+cursor: pointer;
+transition: background 0.2s;
+}
+.hero button:hover {
+background-color: #eab308;
+}
+section {
+padding: 60px 20px;
+max-width: 1000px;
+margin: auto;
+}
+section h2 {
+font-size: 2em;
+margin-bottom: 20px;
+color: #facc15;
+}
+section ul {
+list-style: none;
+padding: 0;
+}
+section ul li {
+background-color: #1f1f1f;
+margin-bottom: 10px;
+padding: 15px;
+border-radius: 12px;
+}
+footer {
+text-align: center;
+padding: 20px;
+border-top: 1px solid #333;
+background-color: #1f1f1f;
+color: #888;
+}
